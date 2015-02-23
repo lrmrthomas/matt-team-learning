@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Super Daylist</title>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+  <h1>Daylist View</h1>
+  <p>View the current daylisting of the required title number
+
+  <table id="tblSearchForm" class="table table-bordered table-condensed" style="width:35%">
+    <thead></thead>
+    <tbody>
+      <tr>
+        <td>
+          <form class="form-inline" role="form">
+              <div class="form-group">
+                <label for="tn">Title Number:</label>
+                <input type="title_no" class="form-control" id="title_no" placeholder="Enter title number">
+              </div>
+              <button type="submit" class="btn btn-default">Search</button>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><span class="badge">3</span> Search results for T/N DN100</p>
+
+  <table id="tblDaylist" class="table table-bordered table-hover table-condensed table-striped">
+      <thead>
+        <tr>
+          <th>LR Reference</th>
+          <th>Type</th>
+          <th>Priority</th>
+          <th>Status</th>
+          <th>Allocated</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A123DS</td>
+          <td>CHG</td>
+          <td>12/02/2015 12:00:00</td>
+          <td>In Progress</td>
+          <td>PH CT1</td>
+        </tr>
+        <tr>
+          <td>B123DS</td>
+          <td>T/P</td>
+          <td>12/02/2015 12:00:00</td>
+          <td>Captured</td>
+          <td>PH CT1</td>
+        </tr>
+        <tr>
+          <td>C123DS</td>
+          <td>DLG</td>
+          <td>13/02/2015 12:00:00</td>
+          <td>Captured</td>
+          <td>UNALLOCATED</td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+</body>
+
+</html>
